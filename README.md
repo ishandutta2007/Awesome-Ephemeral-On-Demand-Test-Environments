@@ -71,9 +71,9 @@ The Test Environment as a Service (TEaaS) and Ephemeral Environments market is e
 
 ## 🛠️ Open-Source GitHub Projects
 
-*Self-hosted preview tools, virtual cluster orchestrators, and ephemeral environment frameworks, strictly ranked by GitHub stars (descending).*
+*Self-hosted preview tools, virtual cluster orchestrators, and ephemeral environment frameworks, strictly ranked by GitHub_Stars (descending).*
 
-| 📦 Repository &amp; Stargazers | ⭐ Star Badge | 📝 Description &amp; Architecture |
+| 📦 Repository &amp; Stargazers | ⭐ Stars_Badge | 📝 Description &amp; Architecture |
 |---|---|---|
 | **[vCluster](https://github.com/loft-sh/vcluster)** | [![Stars](https://img.shields.io/github/stars/loft-sh/vcluster?style=social&color=white)](https://github.com/loft-sh/vcluster/stargazers) | **Virtual Kubernetes clusters running inside host cluster namespaces.** CNCF sandbox project by Loft Labs. Creates fully functional virtual Kubernetes clusters with independent API servers, CRDs, and RBAC in seconds. Features auto-sleep and auto-delete for strong multi-tenant ephemeral environments without cluster sprawl. |
 | **[Telepresence](https://github.com/telepresenceio/telepresence)** | [![Stars](https://img.shields.io/github/stars/telepresenceio/telepresence?style=social&color=white)](https://github.com/telepresenceio/telepresence/stargazers) | **Fast, local development and traffic interception against remote Kubernetes clusters.** CNCF project that intercepts HTTP/TCP traffic to route selected microservice calls to a local workstation, avoiding full-stack replication in preview workflows. |
@@ -112,7 +112,7 @@ We welcome community contributions! To add a new platform or tool:
 
 1. 🍴 **Fork** this repository.
 2. 📝 **Add/edit** entries in `README.md` following the table format.
-3. 🔎 Keep descriptions factual, include starting pricing and free tier/trial limits for SaaS, and link open-source star badges directly to stargazers.
+3. 🔎 Keep descriptions factual, include starting pricing and free tier/trial limits for SaaS, and link open-source Stars_Badges directly to stargazers.
 4. 🚀 **Submit a Pull Request** with a brief summary of the project.
 
 ---
