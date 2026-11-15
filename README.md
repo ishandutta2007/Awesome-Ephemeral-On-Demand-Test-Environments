@@ -15,22 +15,27 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
+
+The Test Environment as a Service (TEaaS) and Ephemeral Environments market is estimated at **$15B to $20B**, projected to exceed **$45B+ by the early 2030s** at a ~15–19% CAGR. The sector exhibits a bifurcated market structure: it is **highly concentrated** in frontend preview deployments (led by Vercel), but **moderately to highly fragmented** across complex full-stack microservice orchestration and Kubernetes sandboxing, where specialized startups and bring-your-own-cloud (BYOC) platforms compete without a single winner-take-all player.
+
 ## SaaS/Hosted Platforms
 
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Vercel Preview Deployments](https://vercel.com/)** | Automatic preview deployments for every Git branch/PR with unique URLs. Zero-config for Next.js and frontend frameworks. Ephemeral by default; persists until branch deletion. | Pro: **$20/month** (includes preview deployments); Enterprise: custom | **Hobby (free)**: preview deployments for personal projects; non-commercial only |
-| **[Heroku Review Apps](https://www.heroku.com/)** | Disposable Heroku apps created for each GitHub pull request. Each review app runs in its own dyno with its own add-ons, providing a full production-like environment per PR. | Pay for dynos and add-ons consumed by review apps (usage-based) | No separate free tier for review apps; Heroku free dyno hours apply to the parent app |
-| **[Bunnyshell](https://www.bunnyshell.com/)** | Ephemeral environments platform with Kubernetes-native orchestration. Creates isolated environments per PR or on demand, with support for complex microservice dependencies. | Quote-only | No free tier; demo via sales |
-| **[Release.com](https://release.com/)** | Ephemeral environments for development, QA, and demos. Spins up full-stack environments on demand with configurable infrastructure and automatic teardown. | Quote-only (usage-based) | Free tier available for small teams |
-| **[Okteto](https://okteto.com/)** | Kubernetes development environments with preview environments for PRs. Focused on developer productivity with hot-reload and remote development. | Quote-only (per-developer or per-cluster) | **Free tier** available for small teams |
-| **[Signadot (SaaS)](https://www.signadot.com/)** | **Virtualized ephemeral environments that fork only changed services.** Runs on your existing Kubernetes cluster, routes unchanged traffic to shared stable dependencies. **Thousands of sandboxes in parallel without cloning the full stack**—Brex reported **$2M annual infrastructure savings** . | Quote-only (enterprise contract) | No free tier; demo via sales |
-| **[Garden (SaaS)](https://garden.io/)** | **Isolated on-demand preview environments built on your existing Kubernetes manifests and Helm charts.** `garden deploy` creates a preview env in a unique namespace per developer or PR. Smart caching and templating for fast spin-up . | Quote-only (enterprise contract) | No free tier; demo via sales |
+| Product | Company Scale / Valuation / Revenue | Description | Starting Pricing | Free Tier / Trial Limits |
+|---------|-------------------------------------|-------------|------------------|--------------------------|
+| **[Heroku Review Apps](https://www.heroku.com/)** | **~$200B Market Cap** (Parent: Salesforce; Heroku revenue ~$100M+ est.) | Disposable Heroku apps created for each GitHub PR running isolated dynos and add-ons prorated to the second. | **$5/month** (Eco dynos pool) or **$7/month** (Basic dynos); charges prorated by runtime | **No permanent free tier or public trial** (legacy free tier retired Nov 2022); GitHub Student Developer Pack provides **$13/month credits for 24 months** |
+| **[Vercel Preview Deployments](https://vercel.com/)** | **$9.3B Valuation** (~$340M–$500M+ ARR) | Automatic preview deployments for every Git branch/PR with unique URLs. Zero-config for frontend frameworks. | **$20/user/month** (Pro plan); pay-as-you-go overages | **Hobby (Free forever)**: non-commercial use only, 100 GB Fast Data Transfer/mo, 1 concurrent build, max 45 min/build, 100 deployments/day |
+| **[Garden (SaaS)](https://garden.io/)** | **~$65M Acquisition** (Acquired by IncrediBuild; parent valuation ~$800M) | Isolated on-demand preview environments built on existing Kubernetes manifests, Helm charts, and smart caching. | **$50/user/month** (Team plan, min. 4 seats); Enterprise custom | **Free forever (Garden Cloud)**: up to 3 seats, 200 compute/build minutes/month, 300 cache hits/month, 7-day cache retention; open-source CLI free forever |
+| **[Okteto](https://okteto.com/)** | **~$60M Valuation** (~$18M raised; ~$3M–$5M ARR est.) | Kubernetes development and preview environment platform with hot-reload and remote dev environments. | **$149/user/month** (or ~$1,788/user/year on Scale/BYOC contract tiers); Starter is free | **Starter (Free forever)**: free for up to **5 users**, self-hosted on your own Kubernetes cluster with core development and preview environment features |
+| **[Release.com](https://release.com/)** | **~$80M–$100M Valuation** (~$22.7M raised via CRV/Sequoia; ~$2M–$5M ARR est.) | Environments-as-a-Service spinning up full-stack preview and QA environments with automated teardown on AWS/GCP. | **~$60/environment/month** on annual contract dimension (AWS Marketplace standard listing; custom enterprise contracts) | **Sandbox Trial**: **5 free environment hours** upon sign-up (or custom proof-of-concept trial via sales demo); no permanent free tier |
+| **[Bunnyshell](https://www.bunnyshell.com/)** | **~$15M–$25M Valuation est.** (~$11.5M raised; ~$3M ARR est.) | Ephemeral environments platform with Kubernetes-native orchestration and microservice dependency handling. | **$0.007/minute** (~$0.42/active hour per running environment; $0 when stopped/idle) | **14-day free trial** (full platform access, no credit card required); no permanent free tier |
+| **[Signadot (SaaS)](https://www.signadot.com/)** | **~$15M–$25M Valuation est.** (~$4.5M raised; ~$1.7M ARR est.) | Virtualized ephemeral sandboxes forking only changed microservices while routing unchanged traffic to shared dependencies. | **$250/month** (Business tier); custom Enterprise tier | **Starter (Free forever)**: 50 sandboxes/month, 100 test invocations/month, 10 concurrent devboxes, 1 connected Kubernetes cluster; **30-day free trial** for Business tier |
 
 ## Open-Source GitHub Projects
 
